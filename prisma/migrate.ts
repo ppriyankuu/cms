@@ -43,6 +43,7 @@ async function seedPurchases() {
       filteredPurchases.push(purchase);
     }
   });
+  
   // remove duplicates
   const map = new Map();
   const uniquePurchases: { userId: string; courseId: number }[] = [];
